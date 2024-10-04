@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalizar Mensaje</title>
+</head>
+<body>
+    <h1>Personaliza tu Mensaje de Bienvenida</h1>
+    <form id="welcomeMessageForm">
+        <label for="message">Mensaje de Bienvenida:</label>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br>
+        <button type="submit">Guardar Mensaje</button>
+    </form>
+
+    <script>
+        document.getElementById('welcomeMessageForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const message = document.getElementById('message').value;
+
+            // Aquí iría el código para enviar el mensaje a tu servidor
+            // por ejemplo, usando fetch para enviar una petición a tu API.
+        });
+    </script>
+</body>
+</html>
